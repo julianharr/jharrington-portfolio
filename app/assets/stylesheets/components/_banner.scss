@@ -1,0 +1,13 @@
+.jumbotron {
+  background: linear-gradient(to left, #e0eafc, #cfdef3);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: #27262C
+  }
+}
