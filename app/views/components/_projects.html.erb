@@ -4,7 +4,11 @@
     <!-- Each image here -->
     <div class="col-md-6 col-sm-12">
       <div class="item mb-4">
-        <%= image_tag "portfolio/spinfinder1.png", alt:"", class:"img-fluid rounded img-project"%>
+
+        <%= link_to "https://spin-finder.herokuapp.com", :target => "_blank" do %>
+          <%= image_tag("portfolio/spinfinder1.png", alt:"", class:"img-fluid rounded img-project") %>
+        <% end %>
+
         <h3 class="mt-2 mb-0">Spin Finder</h3>
         <p>Full Website</p>
       </div>
@@ -23,7 +27,8 @@
 
     <div class="col-md-6 col-sm-12">
       <div class="item mb-4">
-        <%= image_tag "portfolio/thiefofjoy-landing1.png", alt:"", class:"img-fluid rounded img-project" %>
+        <a href="#" data-toggle="modal" data-target="#thiefModal">
+          <%= image_tag "portfolio/thiefofjoy-landing1.png", alt:"", class:"img-fluid rounded img-project" %></a>
         <h3 class="mt-2 mb-0">Thief of Joy</h3>
         <p>Figma Design</p>
       </div>
@@ -32,7 +37,8 @@
 
     <div class="col-md-6 col-sm-12">
       <div class="item mb-4">
-        <%= image_tag "portfolio/calypso1.png", alt:"", class:"img-fluid rounded img-project" %>
+        <a href="#" data-toggle="modal" data-target="#calypsoModal">
+        <%= image_tag "portfolio/calypso1.png", alt:"", class:"img-fluid rounded img-project" %></a>
         <h3 class="mt-2 mb-0">Calypso Cakes</h3>
         <p>Figma Design</p>
       </div>
@@ -40,7 +46,8 @@
 
     <div class="col-md-6 col-sm-12">
       <div class="item mb-4">
-        <%= image_tag "portfolio/halt-1.png", alt:"", class:"img-fluid rounded img-project" %>
+        <a href="#" data-toggle="modal" data-target="#haltModal">
+        <%= image_tag "portfolio/halt-1.png", alt:"", class:"img-fluid rounded img-project" %></a>
         <h3 class="mt-2 mb-0">Halt Redesign</h3>
         <p>Figma Design</p>
       </div>
