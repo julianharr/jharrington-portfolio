@@ -1,9 +1,80 @@
-.circle {
-  border-radius: 62% 38% 67% 33% / 34% 23% 77% 66%;
-  background: #74ebd5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: relative;
-  width: 350px;
-  height: 350px;
+:root {
+  --color-primary: #fff;
+  --color-secondary: #fff;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
 }
+
+.theme-pink {
+  --color-primary: #FB60A3;
+  --color-secondary: #fff;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+
+.theme-blue {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+
+.theme-green {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+
+#about {
+  background-color: var(--color-primary);
+  height: 100vh;
+}
+
+.container-about {
+  display: flex;
+  background-color: var(--color-secondary);
+  flex-direction: column;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 6px 11px -6px #000000;
+  box-shadow: 2px 6px 11px -6px #000000;
+  padding: 24px;
+    button {
+      border: none;
+      padding: 8px;
+      border-radius: 8px;
+      transition: all 0.07s ease-in-out;
+    }
+    button:active {
+      transform: scale(1.1);
+    }
+}
+
+#nav-about {
+  width: 350px;
+  margin: 50px 0 0 75px;
+}
+
+#about-image {
+  width: 350px;
+  height: 275px;
+  border-radius: 8px;
+}
+
+#sports-image {
+  width: 450px;
+  height: 325px;
+  border-radius: 8px;
+}
+
+#about-text {
+  font-family: 'Roboto Mono', monospace;
+  span {
+    color: #8a1dd3;
+    font-weight: 700;
+  }
+}
+
+
+
+
