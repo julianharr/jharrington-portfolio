@@ -1,0 +1,40 @@
+<div id="about">
+  <div class="container-fluid d-flex flex-column">
+    <aside id="nav-about">
+      <h1>About me</h1>
+      <%= link_to 'Home', root_path %>
+    </aside>
+    <main class="container container-about mt-5">
+      <section class="d-flex align-items-center justify-content-center" id="about-primary">
+        <%= image_tag 'portfolio/julian.jpg', id:"about-image" %>
+        <article>
+          <p class="pl-5" id="about-text">
+            Hi! My name is Julian Harrington. I'm a Junior Full Stack Web Developer with a particular love for front end technologies.
+            <br><br>
+            I have experience working with <span>Ruby</span> and <span>Ruby on Rails</span>, <span>HTML</span>, <span>CSS</span>, <span>Bootstrap</span>, <span>TailwindCSS</span>, <span>Javascript ES6</span>, <span>React.js</span> and <span>Figma</span>.
+            <br><br>
+            I love pushing the boundaries of everything I learn and stay up to date with current web design trends and technologies.
+          </p>
+        </article>
+      </section>
+      <hr>
+      <section class="d-flex align-items-center" id="about-hobbies">
+        <article>
+          <h5 id="about-text">Outside of Coding</h5>
+          <br>
+          <p class="pr-5"id="about-text">
+            When I'm not writing code and building websites, I'm exploring. For me, adventuring is done on my bike with long rides or by running.
+            <br><br>
+            I love pushing myself both mentally and physically, and have completed an Ultra-distance marathon and an Ironman triathlon.
+            <br><br>
+            <span>Fun Fact:</span>
+            I finished my undergraduate degree in Food and Nutrition Science 🥑
+          </p>
+          <button class="theme-pink">Pink Power</button>
+          <button class="theme-blue">Totally Blue</button>
+        </article>
+        <%= image_tag 'portfolio/sports.jpg', id:"sports-image" %>
+      </section>
+    </main>
+  </div>
+</div>

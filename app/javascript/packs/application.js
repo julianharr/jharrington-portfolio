@@ -27,4 +27,40 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  pinkTheme();
+  blueTheme();
+  greenTheme();
 });
+
+const about = document.getElementById("about");
+
+const pinkTheme = () => {
+  const themePink = document.querySelector(".theme-pink");
+  if (themePink) {
+    themePink.addEventListener("click", function() {
+      console.log("click");
+      about.classList.toggle("theme-pink");
+    });
+  }
+};
+
+const blueTheme = () => {
+const themeBlue = document.querySelector(".theme-blue");
+  if (themeBlue) {
+    themeBlue.addEventListener("click", function() {
+      console.log("click");
+      about.classList.toggle("theme-blue");
+    });
+  }
+};
+
+
+const greenTheme = () => {
+const greenTheme = document.querySelector(".theme-green");
+  if (themeGreen) {
+    themeGreen.addEventListener("click", function() {
+      console.log("click");
+      about.classList.toggle("theme-green");
+    });
+  }
+};
