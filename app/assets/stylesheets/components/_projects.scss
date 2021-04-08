@@ -2,6 +2,13 @@
   object-fit: cover;
   height: 440px;
   width: 540px;
+  border-radius: 8px;
+  transition: all 0.09s ease-in-out;
+}
+
+.img-project:hover {
+  box-shadow: 6px 6px 1px #AEB4A9;
+  transform: translatex(-6px) translatey(-6px);
 }
 
 

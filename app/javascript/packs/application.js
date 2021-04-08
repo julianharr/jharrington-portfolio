@@ -4,12 +4,12 @@
 // that code so it'll be compiled.
 
 import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
+// import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 Rails.start()
-Turbolinks.start()
+// Turbolinks.start()
 ActiveStorage.start()
 
 
@@ -24,43 +24,20 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
-  pinkTheme();
-  blueTheme();
-  greenTheme();
-});
-
 const about = document.getElementById("about");
 
-const pinkTheme = () => {
-  const themePink = document.querySelector(".theme-pink");
-  if (themePink) {
-    themePink.addEventListener("click", function() {
-      console.log("click");
-      about.classList.toggle("theme-pink");
-    });
+const darkTheme = () => {
+  let themeDark = document.querySelector(".theme-dark");
+  if (themeDark) {
+    themeDark.addEventListener("click", function() {
+      about.classList.toggle("theme-dark");
+    })
   }
 };
 
-const blueTheme = () => {
-const themeBlue = document.querySelector(".theme-blue");
-  if (themeBlue) {
-    themeBlue.addEventListener("click", function() {
-      console.log("click");
-      about.classList.toggle("theme-blue");
-    });
-  }
-};
+darkTheme();
 
+// document.addEventListener('turbolinks:load', () => {
+//   darkTheme();
+// })
 
-const greenTheme = () => {
-const greenTheme = document.querySelector(".theme-green");
-  if (themeGreen) {
-    themeGreen.addEventListener("click", function() {
-      console.log("click");
-      about.classList.toggle("theme-green");
-    });
-  }
-};
