@@ -1,34 +1,24 @@
 :root {
   --color-primary: #fff;
   --color-secondary: #fff;
-  --color-accent: #fd6f53;
+  --color-accent: #3700B3;
   --font-color: #000000;
 }
 
-.theme-pink {
-  --color-primary: #FB60A3;
-  --color-secondary: #fff;
-  --color-accent: #fd6f53;
-  --font-color: #000000;
-}
-
-.theme-blue {
-  --color-primary: #0060df;
-  --color-secondary: #fbfbfe;
-  --color-accent: #fd6f53;
-  --font-color: #000000;
-}
-
-.theme-green {
-  --color-primary: #0060df;
-  --color-secondary: #fbfbfe;
-  --color-accent: #fd6f53;
-  --font-color: #000000;
+.theme-dark {
+  --color-primary: #121212;
+  --color-secondary: #BB86FC;
+  --color-accent: #ffffff;
+  --font-color: #FFFFFF;
 }
 
 #about {
   background-color: var(--color-primary);
   height: 100vh;
+  width: 100vw;
+   h1 {
+    color: var(--font-color);
+   }
 }
 
 .container-about {
@@ -40,19 +30,35 @@
   box-shadow: 2px 6px 11px -6px #000000;
   padding: 24px;
     button {
-      border: none;
-      padding: 8px;
+      border: 0.02rem solid lightgrey;
+      background-color: #EAFDF8;
+      padding: 8px 12px;
+      font-size: 24px;
+      font-weight: 700;
       border-radius: 8px;
       transition: all 0.07s ease-in-out;
+      font-family: 'Roboto Mono', monospace;
     }
     button:active {
-      transform: scale(1.1);
+      box-shadow: 4px 4px 1px #04DC45;
+      transform: translatex(-5px) translatey(-5px);
     }
 }
 
 #nav-about {
   width: 350px;
   margin: 50px 0 0 75px;
+     a {
+      margin-top: 12px;
+      color: var(--color-accent);
+      font-family: 'Roboto Mono', monospace;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 0.04rem solid #fff;
+      box-shadow: 2px 4px 8px -6px #000000;
+      transition: all 0.07s ease-in-out;
+    }
 }
 
 #about-image {
@@ -70,10 +76,44 @@
 #about-text {
   font-family: 'Roboto Mono', monospace;
   span {
-    color: #8a1dd3;
-    font-weight: 700;
+    color: var(--color-accent);
+    font-weight: 900;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .container-about {
+    max-height: 1000px;
+    overflow-y: scroll;
+    button {
+      max-width: 50px;
+    }
+  }
+   #about-primary, #about-hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      img {
+        margin: 16px;
+      }
+
+      p {
+        padding: 12px;
+      }
+   }
+
+   #about-hobbies {
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       h5 {
+        text-align: center;
+       }
+    }
+   }
+ }
 
 
 
