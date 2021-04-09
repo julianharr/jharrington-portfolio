@@ -12,6 +12,10 @@
 @import "components/index";
 @import "pages/index";
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-  min-width: 500px;
+  position: relative;
 }

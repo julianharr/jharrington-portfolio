@@ -15,6 +15,8 @@
 #about {
   background-color: var(--color-primary);
   width: 100vw;
+  display: flex;
+  align-items: center;
    h1 {
     color: var(--font-color);
    }
@@ -82,12 +84,23 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  #about {
+    border: 2px solid red;
+  }
+
+  #about-image {
+    width: 300px;
+    height: 250px;
+  }
+
+  #sports-image {
+    width: 350px;
+    height: 275px;
+  }
+
   .container-about {
     width: 100%;
     margin: 50px auto;
-    overflow: hidden;
-    max-height: 1000px;
-    overflow-y: scroll;
     button {
       max-width: 50px;
     }
