@@ -14,7 +14,6 @@
 
 #about {
   background-color: var(--color-primary);
-  height: 100vh;
   width: 100vw;
    h1 {
     color: var(--font-color);
@@ -23,6 +22,7 @@
 
 .container-about {
   display: flex;
+  margin: 150px auto;
   background-color: var(--color-secondary);
   flex-direction: column;
   border-radius: 8px;
@@ -83,6 +83,9 @@
 
 @media only screen and (max-width: 1000px) {
   .container-about {
+    width: 100%;
+    margin: 50px auto;
+    overflow: hidden;
     max-height: 1000px;
     overflow-y: scroll;
     button {
@@ -90,6 +93,7 @@
     }
   }
    #about-primary, #about-hobbies {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
