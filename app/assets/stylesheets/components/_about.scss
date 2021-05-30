@@ -48,8 +48,9 @@
 }
 
 #nav-about {
-  width: 350px;
-  margin: 50px 0 0 75px;
+  width: 100%;
+  margin: 50px 0 25px 75px;
+  
      a {
       margin-top: 12px;
       color: var(--color-accent);
@@ -57,9 +58,13 @@
       padding: 8px 12px;
       border-radius: 8px;
       text-decoration: none;
-      border: 0.04rem solid #fff;
-      box-shadow: 2px 4px 8px -6px #000000;
+      border: 0.04rem solid #000;
       transition: all 0.07s ease-in-out;
+    }
+
+    a:hover {
+      box-shadow: 4px 4px 1px var(--color-accent);
+      transform: translatex(-5px) translatey(-50px);
     }
 }
 

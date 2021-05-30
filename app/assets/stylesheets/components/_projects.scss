@@ -3,11 +3,11 @@
   height: 440px;
   width: 540px;
   border-radius: 8px;
-  transition: all 0.09s ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .img-project:hover {
-  box-shadow: 6px 6px 1px #AEB4A9;
+  box-shadow: 6px 6px 1px var(--color-accent);
   transform: translatex(-6px) translatey(-6px);
 }
 
